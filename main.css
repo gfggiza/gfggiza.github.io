@@ -1,3 +1,34 @@
 body{
-    background:rgb(236, 143, 143);
+    background:linear-gradient(#F08372,#F4A69A,white);
+    height: 600px;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+h2{ 
+    margin:0;
+    font-size: 7vh;
+    color:rgba(255, 255, 255, 0.734);
+}
+h1{
+    font-size: 10vh;
+    color:rgba(38, 38, 38, 0.666);
+
+
+}
+.container{
+    position: relative;
+}
+            img{
+                position: absolute;
+                left:50%;
+                transform:translateX(-50%);
+                margin-top:0;
+                width:100%;
+            }
+.top-left{
+    position: relative;
+    padding-top:6%;
+    text-align: center
 }
