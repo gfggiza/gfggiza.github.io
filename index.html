@@ -2,25 +2,52 @@
 <html>
 
 <head>
-    <title>Portifolio</title>
+    <title>Gisele Granato</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8">
+    <script>
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+        if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+        function mischandler() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+    </script>
 </head>
-<div class="container">
-    <img src="https://images.pexels.com/photos/1043519/pexels-photo-1043519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="little bird">
-    <div class="top-left">
-        <header>
-            <h2>Welcome to my</h2>
-        </header>
 
-        <body>
-            <h1>Personal Portifolio</h1>
-            <br />
-        </div>
+<header>
+    <p class='copyright'></p>Copyright © All Rights Reserved</p>
+</header>
 
-</div>
+<body>
+        <img src="https://lh3.googleusercontent.com/W2HUc34xi9e1u3qOzORMxsGa4gnlPsY3O6YNFHfct-OzvmPbeGF6-FFYTCfKhOtHjXPKU4u60O2mOai0QxAyTaApWjYiF7qYMQ7zwUcOgOTC342vO05mJxQsj5iAp6o9tmckvfLV-g=w2400"
+        alt="banner">
 
+        <iframe style="border:none" src="https://s3.amazonaws.com/files.podsnack.com/iframe/embed.html?hash=avc5ri9m&t=1526964410" width="460" height="60" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 </body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 </html>
