@@ -66,7 +66,6 @@ a {
   list-style-type: none;
   height: 100%;
   overflow: hidden;
-  width: 150%;
 }
 .gallery li {
   float: left;
