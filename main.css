@@ -27,15 +27,13 @@ iframe{
 
 footer{
     color: #4680C2;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     text-align: center;
-    font-size: 95%;
-    margin:3%;
+    font-size: 1.5em;
     clear: both;
     position: relative;
     z-index: 10;
-    height: 3em;
 }
 
 
