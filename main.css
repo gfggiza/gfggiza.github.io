@@ -39,14 +39,13 @@ footer{
 
 
 
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
-
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 html {
   height: 100%;
 }
 body {
   color: #F0F3F4;
-  font: normal 16px/1.25 'Open Sans';
+  font: normal 16px/1.25 'Rubik', sans-serif;
   min-height: 100%;
   height: 100%;
   overflow: scroll;
@@ -65,8 +64,8 @@ a {
 .gallery {
   list-style-type: none;
   height: 100%;
-  overflow: hidden;
-  width: 150%;
+  width: 100%;
+  margin-bottom:20%; 
 }
 .gallery li {
   float: left;
@@ -137,7 +136,7 @@ a {
 }
 
 .gallery li:nth-child(1) .front-side {
-  background-image:url('http://pre12.deviantart.net/f04f/th/pre/i/2015/281/c/e/virtus_pro_tribute_by_haryarti-d9cdvwy.jpg');
+  background-image:url('https://lh3.googleusercontent.com/aqoi7niKI80jVq4_BXKjpiyXEluA4n1vwn8HhwCydwcOub9w6FvE9A4C_cHzEYBPnHcuEiKdrj2GA6_vWMzu6aRZv0Xvnx9e9fAv1yqPvwIsM-tku79ddFRCk1Gs7CGQlwAvxihnYg');
 }
 .gallery li:nth-child(1) .loader {
   border-top-color: #F39C12;
@@ -151,11 +150,11 @@ a {
 }
 
 .gallery li:nth-child(2) .front-side {
-  background-image: url('http://pre06.deviantart.net/f121/th/pre/i/2014/280/7/a/crystal_maiden_by_haryarti-d81xgfl.jpg');
+  background-image: url('https://lh3.googleusercontent.com/cF8wRXr8MEf8OLoPAxEFH8sBRDej9hQIJ2gZ_rUa6IP0v5Z6JjXLXa_cAquR6Vrz7J8AKGmAifB7SKtevDt_pdpCP27VGJ2xIsOBEPfni8rmyZWc0J88k_jCsL2TA2kCEEBLaxBWyg');
 }
 
 .gallery li:nth-child(3) .front-side {
-  background-image: url('http://pre10.deviantart.net/3566/th/pre/i/2014/289/5/a/drow_ranger_by_haryarti-d83292f.jpg');
+  background-image: url('https://lh3.googleusercontent.com/MDMgDutZi6VwyPeSm_YeX2PA-0lPg7cDv385Alfo8ZYnRYhpPITCG6DzDJwygAjd5n98SwxoYtpK1bMtfe-ctq9vR9fvEC5LXrPvxMIUzyVO9nCEo57fyqiDl4_jjYEkThcBI7i8Hw');
 }
 .gallery li:nth-child(3) .loader {
   border-top-color: #424949;
@@ -169,7 +168,7 @@ a {
 }
 
 .gallery li:nth-child(4) .front-side {
-  background-image: url('http://pre01.deviantart.net/c319/th/pre/i/2014/322/e/a/windrunner_by_haryarti-d86ubud.jpg');
+  background-image: url('https://lh3.googleusercontent.com/4rbLZQhXL_7a7hK9FKtEJhLb4FLTSl3t3gXyBpbC4mK9f_oSEXERMz5zSM_A3nvkmvr_TknByZCZdaOxxX2Jt8epXZTgQ-aw6tEGyI4owf7aiLyvKcFOIhyDaVlLW25ZBch9WeGbvQ');
 }
 .gallery li:nth-child(4) .loader {
   border-top-color: #F1C40F;
@@ -183,7 +182,7 @@ a {
 }
 
 .gallery li:nth-child(5) .front-side {
-  background-image: url('http://pre04.deviantart.net/5815/th/pre/f/2014/149/7/7/death_prophet_from_dota_2_by_o_l_i_v_i-d7k2ekl.jpg');
+  background-image: url('https://lh3.googleusercontent.com/oTqGTvIDHVWm09oU-ysBwWmo_mwadBiIIbkZFQkVDtnXxonzDBkm4NwGe9ScTMAcw57Vn0NO0MXodOosSFc5a9hqrGWIU250UwP4S-sA7-djHnUYAzIXvFgjc_XQy24C0kq7BJyORQ');
 }
 .gallery li:nth-child(5) .loader {
   border-top-color: #1ABC9C;
@@ -197,7 +196,7 @@ a {
 }
 
 .gallery li:nth-child(6) .front-side {
-  background-image: url('http://pre02.deviantart.net/ce96/th/pre/i/2015/177/7/7/katarina_by_haryarti-d8ytd5o.jpg');
+  background-image: url('https://lh3.googleusercontent.com/l53gouxPwUx1OF91g5X1NHGsJ5gOGIHCrncY7LrQT28_B_OuBN_5cUJfYHnuVBCHQUjddT1qcyJcLqMWuZbWnJwyjSLeoGYFt2kXEkcb8ub_PE1_2IHo9xJh2dF_KTfp3H5DjPSGgA');
 }
 .gallery li:nth-child(6) .loader {
   border-top-color: #E74C3C;
@@ -210,33 +209,7 @@ a {
   background: #EC7063;
 }
 
-.gallery li:nth-child(7) .front-side {
-  background-image: url('http://pre10.deviantart.net/cbaf/th/pre/i/2015/047/0/2/vengeful_spirit_by_haryarti-d8iau4i.png');
-}
-.gallery li:nth-child(7) .loader {
-  border-top-color: #8E44AD;
-  border-left-color: #8E44AD;
-}
-.gallery li:nth-child(7) .text h3 {
-  color: #8E44AD;
-}
-.gallery li:nth-child(7) .text h3:after {
-  background: #A569BD;
-}
 
-.gallery li:nth-child(8) .front-side {
-  background-image: url('http://pre06.deviantart.net/73a2/th/pre/i/2014/080/5/7/lina_by_haryarti-d7b48eu.jpg');
-}
-.gallery li:nth-child(8) .loader {
-  border-top-color: #F39C12;
-  border-left-color: #F39C12;
-}
-.gallery li:nth-child(8) .text h3 {
-  color: #F39C12;
-}
-.gallery li:nth-child(8) .text h3:after {
-  background: #F5B041;
-}
 
 .gallery .content {
   text-align: center;
