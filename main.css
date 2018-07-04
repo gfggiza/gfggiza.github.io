@@ -3,7 +3,7 @@ body {
     background: linear-gradient(#DCEFF3 2%, #DDF1FD 1%, white);
     height: 600px;
     background-repeat: no-repeat;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Rubik', sans-serif;
     padding: 0;
 }
 
@@ -62,7 +62,7 @@ a {
 }
 .gallery {
   list-style-type: none;
-  height: 50%;
+  height: 100%;
   width: 100%;
   margin-bottom:20%; 
 }
