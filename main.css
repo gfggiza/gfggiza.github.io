@@ -32,6 +32,10 @@ footer{
     text-align: center;
     font-size: 95%;
     margin:3%;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
 }
 
 
