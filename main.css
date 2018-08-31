@@ -1,11 +1,11 @@
 
-body {
+/* body {
     background: linear-gradient(#DCEFF3 2%, #DDF1FD 1%, white);
     height: 600px;
     background-repeat: no-repeat;
-    font-family: 'Rubik', sans-serif;
+    font-family:  'Lato', sans-serif;
     padding: 0;
-}
+} */
 
 img {
     position: relative;
@@ -25,29 +25,17 @@ iframe{
 
 
 
-footer{
-    color: #4680C2;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1.5em;
-    clear: both;
-    position: relative;
-    z-index: 10;
-}
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Rubik');
 html {
   height: 100%;
 }
 body {
   color: #F0F3F4;
-  font: normal 16px/1.25 'Rubik', sans-serif;
+  font: normal 16px/1.25  'Lato', sans-serif;
   min-height: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow-x:hidden;
+  overflow-y: auto;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -59,6 +47,10 @@ a {
 }
 .container {
   height: 100%;
+  position: relative;
+  left: 58%;
+  transform: translateX(-50%);
+  width: 100vw;
 }
 .gallery {
   list-style-type: none;
@@ -315,4 +307,17 @@ a {
     visibility: hidden;
     opacity: 0;
   }
+}
+.imgBigger{
+ height: 100%!important;
+}
+footer{
+  color: #4680C2;
+  font-family:  'Lato', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.5em;
+  clear: both;
+  position: relative;
+  z-index: 10;
 }
