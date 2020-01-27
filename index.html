@@ -26,7 +26,8 @@
 	var canvas, stage1, exportRoot;
 	function init() {
 		// --- write your JS code here ---
-		
+		document.getElementById("canvas2").style.display = "none";
+
 		canvas = document.getElementById("canvas");
 		exportRoot = new lib.Portifolioanimacao();
 	
@@ -40,6 +41,7 @@
 		var canvas2, stage2, exportRoot;
 		function init() {
 		// --- write your JS code here ---
+		document.getElementById("canvas").style.display = "none";
 		document.getElementById("btn-central").style.visibility = "hidden";
 
 		canvas2 = document.getElementById("canvas2");
@@ -63,8 +65,8 @@
 <body onload="init();" style="background-color:#e8fafd;margin:0px;">
 
 
-	<div class="container" id="btn-central">
-			<div class="btn-style"><div class="bg"></div><a href="" target="_blank"></a><i class="fa fa-chevron-right icon-style"  aria-hidden="true"></i>
+	<div class="container">
+			<div class="btn-style" id="btn-central"><div class="bg"></div><a href="" target="_blank"></a><i class="fa fa-chevron-right icon-style"  aria-hidden="true"></i>
 		  </div>
 	</div>
 
