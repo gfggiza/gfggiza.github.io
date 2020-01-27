@@ -2,19 +2,93 @@ html,body{
     height: fit-content;
 }
 
-.btn-style {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate3d(-50%, -50%, 0px);
-    z-index: 100;
-    background: #a51a46;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    text-align: center;
+.btn-sem-estilo{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
+.btn-fechar{
+    cursor: pointer;
+    float: right;
+    color: #9e1b44;
+    font-weight: bold;
+}
+
+
+@media  screen and (min-width: 768px) {
+    .btn-style {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate3d(-50%, -50%, 0px);
+        z-index: 100;
+        background: #a51a46;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .bg {
+        z-index: 90;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        animation: pulse 2s ease infinite;
+        background: #8a1238;
+    }
+    .btn-fechar{
+        font-size: 50px!important;
+        padding: 40px 60px;
+    }
+    .btn-fechar:hover{
+        transition: 1.2s;
+        color:  #18030a;
+        font-size: 55px;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .btn-style {
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+        z-index: 100;
+        background: #a51a46;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .icon-style {
+        font-size: 30px;
+    }
+
+    .bg {
+        z-index: 90;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        animation: pulse 2s ease infinite;
+        background: #8a1238;
+    }
+    .text-card-modal{
+        font-size: 35px;
+    }
+
+    .btn-fechar {
+        font-size: 70px!important;
+        padding: 5px 20px!important;
+    }
+}
+
 
 .btn-style:hover {
     transition: 1.2s;
@@ -31,17 +105,7 @@ html,body{
     transform: translate3d(-50%, -50%, 0px);
 }
 
-.bg {
-    z-index: 90;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-}
 
-.bg {
-    animation: pulse 2s ease infinite;
-    background: #8a1238;
-}
 .bg:hover{
     animation-play-state: paused;
 }
@@ -82,29 +146,8 @@ html,body{
     display: none;
 }
 
-.btn-sem-estilo{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
 
-.btn-fechar{
-    cursor: pointer;
-    float: right;
-    font-size: 50px;
-    color: #9e1b44;
-    padding: 40px 60px;
-    font-weight: bold;
-}
-.btn-fechar:hover{
-    transition: 1.2s;
-    color:  #18030a;
-    font-size: 55px;
-}
+
 
 .modal-style{
     position: absolute;
