@@ -9,27 +9,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Portifolio-animacao</title>
+<title>Portifolio</title>
 <!-- write your code here -->
 
-
+<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<script
+      src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"
+	  data-auto-a11y="true"></script>
+	  
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="nome-site.js"></script>
 <script src="Portifolio-animacao.js"></script>
 <script>
-var canvas, stage, exportRoot;
-function init() {
-	// --- write your JS code here ---
+	if(window.screen.width >= 768){
+	var canvas, stage1, exportRoot;
+	function init() {
+		// --- write your JS code here ---
+		
+		canvas = document.getElementById("canvas");
+		exportRoot = new lib.Portifolioanimacao();
 	
-	canvas = document.getElementById("canvas");
-	exportRoot = new lib.Portifolioanimacao();
+		stage1 = new createjs.Stage(canvas);
+		stage1.addChild(exportRoot);
+		stage1.update();
+	
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage1);
+	}}else{
+		var canvas2, stage2, exportRoot;
+		function init() {
+		// --- write your JS code here ---
+		document.getElementById("btn-central").style.visibility = "hidden";
 
-	stage = new createjs.Stage(canvas);
-	stage.addChild(exportRoot);
-	stage.update();
-
-	createjs.Ticker.setFPS(lib.properties.fps);
-	createjs.Ticker.addEventListener("tick", stage);
-}
+		canvas2 = document.getElementById("canvas2");
+		canvas2.classList.add('subir');
+		exportRoot = new lib.nomesite();
+	
+		stage2 = new createjs.Stage(canvas2);
+		stage2.addChild(exportRoot);
+		stage2.update();
+	
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage2);
+	}
+ }
 
 </script>
 
@@ -37,6 +61,16 @@ function init() {
 
 </head>
 <body onload="init();" style="background-color:#e8fafd;margin:0px;">
-	<canvas id="canvas" width="1786" height="927" style="background-color:#e8fafd;padding:30px;max-height: 100vh;width:auto;max-width:100vw;position:relative;left:50%;transform: translateX(-50%);display:block;"></canvas>
+
+
+	<div class="container" id="btn-central">
+			<div class="btn-style"><div class="bg"></div><a href="" target="_blank"></a><i class="fa fa-chevron-right icon-style"  aria-hidden="true"></i>
+		  </div>
+	</div>
+
+	<canvas id="canvas" width="1786" height="927" class="canvas-style"></canvas>
+
+	<canvas id="canvas2" width="866" height="857" class="canvas-style"></canvas>
+
 </body>
 </html>
