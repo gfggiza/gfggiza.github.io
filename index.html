@@ -7,72 +7,110 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Portifolio</title>
-<!-- write your code here -->
+	<meta charset="UTF-8">
+	<title>Portifolio</title>
+	<!-- write your code here -->
 
-<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilos.css">
-<script
-      src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"
-	  data-auto-a11y="true"></script>
-	  
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="nome-site.js"></script>
-<script src="Portifolio-animacao.js"></script>
-<script>
-	if(window.screen.width >= 768){
-	var canvas, stage1, exportRoot;
-	function init() {
-		// --- write your JS code here ---
-		document.getElementById("canvas2").style.display = "none";
+	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-a11y="true"></script>
 
-		canvas = document.getElementById("canvas");
-		exportRoot = new lib.Portifolioanimacao();
-	
-		stage1 = new createjs.Stage(canvas);
-		stage1.addChild(exportRoot);
-		stage1.update();
-	
-		createjs.Ticker.setFPS(lib.properties.fps);
-		createjs.Ticker.addEventListener("tick", stage1);
-	}}else{
-		var canvas2, stage2, exportRoot;
-		function init() {
-		// --- write your JS code here ---
-		document.getElementById("canvas").style.display = "none";
-		document.getElementById("btn-central").style.visibility = "hidden";
+	<script src="main.js"></script>
 
-		canvas2 = document.getElementById("canvas2");
-		canvas2.classList.add('subir');
-		exportRoot = new lib.nomesite();
-	
-		stage2 = new createjs.Stage(canvas2);
-		stage2.addChild(exportRoot);
-		stage2.update();
-	
-		createjs.Ticker.setFPS(lib.properties.fps);
-		createjs.Ticker.addEventListener("tick", stage2);
-	}
- }
+	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+	<script src="nome-site.js"></script>
+	<script src="Portifolio-animacao.js"></script>
+	<script>
+		if (window.screen.width >= 768) {
+			var canvas, stage1, exportRoot;
 
-</script>
+			function init() {
+				// --- write your JS code here ---
+				document.getElementById("canvas2").style.display = "none";
 
-<!-- write your code here -->
+				canvas = document.getElementById("canvas");
+				exportRoot = new lib.Portifolioanimacao();
+
+				stage1 = new createjs.Stage(canvas);
+				stage1.addChild(exportRoot);
+				stage1.update();
+
+				createjs.Ticker.setFPS(lib.properties.fps);
+				createjs.Ticker.addEventListener("tick", stage1);
+			}
+		} else {
+			var canvas2, stage2, exportRoot;
+
+			function init() {
+				// --- write your JS code here ---
+				document.getElementById("canvas").style.display = "none";
+
+				canvas2 = document.getElementById("canvas2");
+				canvas2.classList.add('subir');
+				exportRoot = new lib.nomesite();
+
+				stage2 = new createjs.Stage(canvas2);
+				stage2.addChild(exportRoot);
+				stage2.update();
+
+				createjs.Ticker.setFPS(lib.properties.fps);
+				createjs.Ticker.addEventListener("tick", stage2);
+			}
+		}
+	</script>
+
+	<!-- write your code here -->
 
 </head>
+
 <body onload="init();" style="background-color:#e8fafd;margin:0px;">
 
+	<div class="modal-style hide" id="modal1">
+		<button onclick="FecharModal()" class="btn-fechar btn-sem-estilo">&times;</button>
 
-	<div class="container">
-			<div class="btn-style" id="btn-central"><div class="bg"></div><a href="" target="_blank"></a><i class="fa fa-chevron-right icon-style"  aria-hidden="true"></i>
-		  </div>
+		<div class="card-contain">
+			<div class="card-modal">
+					<div class="text-card-modal">
+						<h2>Portifólio</h2>
+					</div>
+				</div>
+				<div class="card-modal">
+						<div class="text-card-modal">
+							<h2>Projetos</h2>
+						</div>
+					</div>
+					<div class="card-modal">
+							<div class="text-card-modal">
+								<h2>Contato</h2>
+							</div>
+						</div>
+		</div>
 	</div>
+
+	<div class="modal-style hide" id="modal2">
+		<div class="card-modal">
+			<div class="picture-card-modal"></div>
+			<div class="text-card-modal">
+				<h2>Layouts em Angular 2 - para Veiculando.com</h2>
+			</div>
+		</div>
+	</div>
+
+
+	<button class="container btn-sem-estilo" onclick="AbrirModal()">
+		<div class="btn-style" id="btn-central">
+			<div class="bg"></div><i class="fa fa-chevron-right icon-style" aria-hidden="true"></i>
+		</div>
+	</button>
+
+
 
 	<canvas id="canvas" width="1786" height="927" class="canvas-style"></canvas>
 
 	<canvas id="canvas2" width="866" height="857" class="canvas-style"></canvas>
 
 </body>
+
 </html>
