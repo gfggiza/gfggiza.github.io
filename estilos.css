@@ -61,8 +61,8 @@ html,body{
         transform: translateX(-50%);
         z-index: 100;
         background: #a51a46;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 100%;
         text-align: center;
     }
@@ -73,18 +73,18 @@ html,body{
 
     .bg {
         z-index: 90;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 100%;
         animation: pulse 2s ease infinite;
         background: #8a1238;
     }
     .text-card-modal{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .btn-fechar {
-        font-size: 70px!important;
+        font-size: 50px!important;
         padding: 5px 20px!important;
     }
 }
