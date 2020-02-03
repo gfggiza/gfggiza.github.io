@@ -1,25 +1,28 @@
-html,body{
+html,
+body {
     height: fit-content;
+    font-family: 'Rubik', sans-serif;
 }
 
-.btn-sem-estilo{
+.btn-sem-estilo {
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
-.btn-fechar{
+
+.btn-fechar {
     cursor: pointer;
     float: right;
-    color: #9e1b44;
+    color: #b97a8e;
     font-weight: bold;
 }
 
 
-@media  screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .btn-style {
         position: absolute;
         left: 50%;
@@ -42,18 +45,47 @@ html,body{
         animation: pulse 2s ease infinite;
         background: #8a1238;
     }
-    .btn-fechar{
-        font-size: 50px!important;
-        padding: 40px 60px;
+
+    .card-contain {
+        margin: 5%;
     }
-    .btn-fechar:hover{
+
+    .btn-fechar {
+        font-size: 50px !important;
+        padding: 10px 60px;
+    }
+
+    .btn-fechar:hover {
         transition: 1.2s;
-        color:  #18030a;
+        color: #9e1b44;
         font-size: 55px;
+    }
+
+    .sobremim-style {
+        display: flex;
+    }
+
+    .img-div {
+        overflow: hidden;max-width: 30%;
+    }
+
+    .sobremim-img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .sobremim-text{
+        max-width: 40%;
+        padding:30px;
+    }
+    .sobremim-skills{
+        width: 25%;
+        padding:10px;
     }
 }
 
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .btn-style {
         position: absolute;
         left: 50%;
@@ -79,16 +111,24 @@ html,body{
         animation: pulse 2s ease infinite;
         background: #8a1238;
     }
-    .text-card-modal{
+
+    .card-contain {
+        margin: 10%;
+    }
+
+    .text-card-modal {
         font-size: 20px;
     }
 
     .btn-fechar {
-        font-size: 50px!important;
-        padding: 5px 20px!important;
+        font-size: 50px !important;
+        padding: 5px 20px !important;
+    }
+
+    .sobremim-style {
+        display: block;
     }
 }
-
 
 .btn-style:hover {
     transition: 1.2s;
@@ -106,7 +146,7 @@ html,body{
 }
 
 
-.bg:hover{
+.bg:hover {
     animation-play-state: paused;
 }
 
@@ -149,7 +189,7 @@ html,body{
 
 
 
-.modal-style{
+.modal-style {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -158,24 +198,25 @@ html,body{
     height: 100%;
     background: rgba(202, 247, 255, 0.82);
     z-index: 150;
-        animation:blowUpContent .5s forwards;
+    animation: blowUpContent .5s forwards;
 }
 
 
 
-  
-  @keyframes blowUpContent {
+
+@keyframes blowUpContent {
     0% {
-        height: 1px ;
+        height: 1px;
         opacity: 0;
     }
+
     25% {
-        height: 20px ;
+        height: 20px;
         opacity: 0.2;
     }
 
     50% {
-        height: 100px ;
+        height: 100px;
         opacity: 0.5;
     }
 
@@ -183,22 +224,144 @@ html,body{
         height: 100%;
         opacity: 1;
     }
-  }
- 
-  .card-contain{
-      margin:10%;
-  }
+}
 
-  .card-modal{
-      margin:30px;
-      background: white;
-      padding:10px 15px;
-      z-index:155 ;
-      cursor: pointer;
-      text-align: center;
-  }
+.card-modal {
+    margin: 30px;
+    background: white;
+    padding: 10px 15px;
+    z-index: 155;
+    cursor: pointer;
+    text-align: center;
+}
 
-  .text-card-modal{
+.card-modal:hover {
+    transition: 1.2s ease-out;
+    background: rgba(145, 202, 212, 0.82);
+}
+
+.white-box {
+    margin: 30px;
+    background: white;
+    padding: 10px 15px;
+    z-index: 155;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
     color: #9e1b44;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: #9e1b44;
+    padding: 10px;
+}
+
+
+.text-card-modal {
+    color: #9e1b44;
+}
+
+.btn-voltar {
+    background: #9e1b44;
+    padding: 15px 18px;
+    border-radius: 50%;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: white;
+    float: left;
+}
+
+.btn-voltar:hover {
+    transition: 1.2s;
+    color: rgba(145, 202, 212, 0.82);
+    background: #580620;
+}
+
+/* Skills */
+
+@keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+.bar {
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
     font-family: 'Rubik', sans-serif;
-  }
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+    content: attr(data-skill);
+    background-color: #f3a1bb;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.bar.front::before {
+    background-color: #9e1b44;
+}
+
+.bar.back::before {
+    background-color: #e27c9d;
+}
+
+.bar.learning::before {
+    width: calc(20% - 10px);
+}
+
+.bar.basic::before {
+    width: calc(40% - 10px);
+}
+
+.bar.medium::before {
+    width: calc(50% - 10px);
+}
+
+.bar.intermediate::before {
+    width: calc(60% - 10px);
+}
+
+.bar.advanced::before {
+    width: calc(80% - 10px);
+}
+
+.bar.expert::before {
+    width: calc(100% - 10px);
+}
+
+/* Skills */
