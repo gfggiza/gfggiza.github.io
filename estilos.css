@@ -322,7 +322,7 @@ body {
 
 .bar::before {
     content: attr(data-skill);
-    background-color: #f3a1bb;
+    background-color: #f8c6d6;
     display: inline-block;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
