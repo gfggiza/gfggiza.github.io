@@ -12,54 +12,76 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portifolio</title>
-	<!-- write your code here -->
 
-	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="animacoes.css">
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="beMobileOrNot.css">
+	<!-- css -->
+
+	<!-- importados -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 	<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-a11y="true"></script>
+	<!-- importados -->
 
+	<!-- js -->
 	<script src="main.js"></script>
-
 	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 	<script src="nome-site.js"></script>
 	<script src="Portifolio-animacao.js"></script>
+	<script src="como-se-faz-plástico.js"></script>
+	<!-- js -->
 	<script>
+		
 		if (window.screen.width >= 768) {
-			var canvas, stage1, exportRoot;
+			var canvas, stage1, exportRoot1;
 
 			function init() {
 				// --- write your JS code here ---
 				document.getElementById("canvas2").style.display = "none";
 
 				canvas = document.getElementById("canvas");
-				exportRoot = new lib.Portifolioanimacao();
+				exportRoot1 = new lib.Portifolioanimacao();
 
 				stage1 = new createjs.Stage(canvas);
-				stage1.addChild(exportRoot);
+				stage1.addChild(exportRoot1);
 				stage1.update();
 
 				createjs.Ticker.setFPS(lib.properties.fps);
 				createjs.Ticker.addEventListener("tick", stage1);
 			}
 		} else {
-			var canvas2, stage2, exportRoot;
+			var canvas2, stage2, exportRoot2;
 
 			function init() {
 				// --- write your JS code here ---
 				document.getElementById("canvas").style.display = "none";
 
 				canvas2 = document.getElementById("canvas2");
-				canvas2.classList.add('subir');
-				exportRoot = new lib.nomesite();
+				exportRoot2 = new lib.nomesite();
 
 				stage2 = new createjs.Stage(canvas2);
-				stage2.addChild(exportRoot);
+				stage2.addChild(exportRoot2);
 				stage2.update();
 
 				createjs.Ticker.setFPS(lib.properties.fps);
 				createjs.Ticker.addEventListener("tick", stage2);
 			}
 		}
+
+		// var canvas3, stage, exportRoot;
+
+		// function init() {
+		// 	canvas3 = document.getElementById("canvas3");
+		// 	exportRoot = new lib3.comosefazplástico();
+
+		// 	stage = new createjs.Stage(canvas3);
+		// 	stage.addChild(exportRoot);
+		// 	stage.update();
+
+		// 	createjs.Ticker.setFPS(lib3.properties.fps);
+		// 	createjs.Ticker.addEventListener("tick", stage);
+		// }
 	</script>
 
 	<!-- write your code here -->
@@ -97,9 +119,9 @@
 		<div class="card-contain hide" id="portifolio">
 			<button class="btn-sem-estilo btn-voltar" onclick="VoltarPortifolio()">
 				<i class="fas fa-arrow-left"></i></button>
-				<p class="title">
-						Portifólio
-					</p>
+			<p class="title">
+				Portifólio
+			</p>
 			<div class="white-box">
 				<h3>Veiculando.com - Marketing Site</h3>
 				<object type="text/html" data="https://veiculando.com/" width="100%" height="400px"
@@ -111,6 +133,12 @@
 		<div class="card-contain hide" id="projetos">
 			<button class="btn-sem-estilo btn-voltar" onclick="VoltarProjetos()"><i
 					class="fas fa-arrow-left"></i></button>
+			<p class="title">
+				Projetos
+			</p>
+			<div class="white-box">
+					<!-- <canvas id="canvas3" width="612" height="938" style="background-color:white"></canvas> -->
+			</div>
 		</div>
 
 		<div class="card-contain hide" id="sobremim">
@@ -121,25 +149,28 @@
 			</p>
 			<div class="white-box">
 				<div class="sobremim-style">
-					<div class ="img-div">
+					<div class="img-div">
 						<img src="https://lh3.googleusercontent.com/G9CKVfkdXzY5weZWPwOUU5AELRjoPFd-AeKu_zusa4wNhTr5aOWRurieXMZBTTu42xs7qVMr9QiLg8zhMaYhE2d1i6GkUK5T2NsOVLIRxIdVDUpeyUrGGk11qQ0OOiUORZWdngRpYQ=w2400"
 							alt="minha foto" class="sobremim-img" style="max-width: 300px;">
 					</div>
-						<div class="sobremim-text">
-							<p>Olá, Meu nome é <b>Gisele Granato</b>. <br><br>
-								Sou Front-End Web Developer a cerca de 2 anos com o grupo Veiculando.<br>
-								Trabalhar com programação é uma grande realização e uma constante busca por conhecimento.</p>
-						</div>
+					<div class="sobremim-text">
+						Olá, Meu nome é <b>Gisele Granato</b>. <br><br>
+						Sou Front-End Web Developer desde 2018, atualmente trabalho na startup Veiculando.com.<br>
+						Trabalhar com programação é uma grande realização e uma constante busca por conhecimento.
+					</div>
 
-						<div class="sobremim-skills">
-							<div class="subtitle">Habilidades</div>
-							<div class="bar front advanced" data-skill="HTML5"></div>
-							<div class="bar front advanced" data-skill="CSS3"></div>
-							<div class="bar back intermediate" data-skill="Javascript"></div>
-							<div class="bar back medium" data-skill="Git"></div>
-							<div class="bar back basic" data-skill="C#"></div>
-							<div class="bar learning" data-skill="Python"></div>
-						</div>
+					<div class="sobremim-skills">
+						<div class="subtitle">Habilidades</div>
+						<div class="bar front expert" data-skill="Pacote Adobe"></div>
+						<div class="bar front advanced" data-skill="HTML5"></div>
+						<div class="bar front advanced" data-skill="CSS3"></div>
+						<div class="bar back intermediate" data-skill="Angular 2+"></div>
+						<div class="bar back intermediate" data-skill="Javascript"></div>
+						<div class="bar back medium" data-skill="Git"></div>
+						<div class="bar back basic" data-skill="C#"></div>
+						<div class="bar learning" data-skill="Python"></div>
+						<div class="bar tiny" data-skill="React"></div>
+					</div>
 				</div>
 
 
@@ -150,9 +181,9 @@
 		<div class="card-contain hide" id="contato">
 			<button class="btn-sem-estilo btn-voltar" onclick="VoltarContato()"><i
 					class="fas fa-arrow-left"></i></button>
-					<p class="title">
-						Contato
-					</p>
+			<p class="title">
+				Contato
+			</p>
 			<div class="white-box">
 				<div class="card-contain">
 					<p>
@@ -186,7 +217,7 @@
 
 	<canvas id="canvas" width="1786" height="927" class="canvas-style"></canvas>
 
-	<canvas id="canvas2" width="866" height="857" class="canvas-style"></canvas>
+	<canvas id="canvas2" width="866" height="857" class="canvas-style subir"></canvas>
 
 </body>
 

@@ -1,0 +1,115 @@
+@media screen and (min-width: 768px) {
+    .btn-style {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate3d(-50%, -50%, 0px);
+        z-index: 100;
+        background: #a51a46;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .bg {
+        z-index: 90;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        animation: pulse 2s ease infinite;
+        background: #8a1238;
+    }
+
+    .card-contain {
+        margin: 5%;
+    }
+
+    .btn-fechar {
+        font-size: 50px !important;
+        padding: 10px 60px;
+    }
+
+    .btn-fechar:hover {
+        transition: 1.2s;
+        color: #9e1b44;
+        font-size: 55px;
+    }
+
+    .sobremim-style {
+        display: flex;
+    }
+
+    .img-div {
+        overflow: hidden;
+        max-width: 30%;
+        padding: 10px;
+    }
+
+    .sobremim-img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sobremim-text{
+        max-width: 40%;
+        padding:30px;
+    }
+    .sobremim-skills{
+        width: 25%;
+        padding:10px;
+    }
+    .white-box {
+        margin: 30px;}
+}
+
+@media screen and (max-width: 768px) {
+    .btn-style {
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+        z-index: 100;
+        background: #a51a46;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .icon-style {
+        font-size: 30px;
+    }
+
+    .bg {
+        z-index: 90;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        animation: pulse 2s ease infinite;
+        background: #8a1238;
+    }
+
+    .text-card-modal {
+        font-size: 20px;
+    }
+
+    .btn-fechar {
+        font-size: 40px !important;
+        padding-right: 5px;
+    }
+
+    .sobremim-style {
+        display: block;
+    }
+    
+    .img-div{
+        overflow: hidden;
+    }
+    .sobremim-img{
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
