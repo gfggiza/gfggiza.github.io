@@ -11,6 +11,10 @@ body {
     color: #b97a8e!important;
     font-weight: bold;
 }
+.btn-fechar:hover {
+    transition:1.2s;
+    color: #9e1b44!important;
+}
 
 .btn-sem-estilo {
     background: none;
