@@ -12,7 +12,7 @@ body {
     font-weight: bold;
 }
 .btn-fechar:hover {
-    transition:1.2s;
+    transition:.8s;
     color: #9e1b44!important;
 }
 
@@ -92,6 +92,7 @@ body {
     background: rgba(202, 247, 255, 0.82);
     z-index: 150;
     animation: blowUpContent .5s forwards;
+    overflow-x: hidden;
 }
 
 
@@ -109,6 +110,7 @@ body {
     background: white;
     padding: 10px 15px;
     z-index: 155;
+    height:fit-content;
 }
 
 .text-card-modal {
@@ -121,4 +123,27 @@ body {
     text-align: center;
 }
 
+.btn-common{
+    background: #9e1b44;
+    padding: 10px 40px;
+    margin-top: 15px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: white;
+    float: left;
+    text-decoration: none;
+}
 
+.btn-quadrado{
+    height: 50%;
+    width: 50%;
+    overflow:hidden;
+}
+
+.img-quadrado{
+  position:relative;
+}

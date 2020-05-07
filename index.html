@@ -94,22 +94,22 @@
 		<button onclick="FecharModal()" class="btn-fechar btn-sem-estilo">&times;</button>
 
 		<div class="card-contain" id="menu">
-			<div class="card-modal" onclick="AbrirPortifolio()">
+			<div class="card-modal" onclick="DisplayPage(this)" data-menu-item="portifolio">
 				<div class="text-card-modal">
 					<h2>Portifólio</h2>
 				</div>
 			</div>
-			<!-- <div class="card-modal" onclick="AbrirProjetos()">
+			<!-- <div class="card-modal" onclick="DisplayPage(this)" data-menu-item="projetos">
 				<div class="text-card-modal">
 					<h2>Projetos</h2>
 				</div>
 			</div> -->
-			<div class="card-modal" onclick="AbrirSobremim()">
+			<div class="card-modal" onclick="DisplayPage(this)" data-menu-item="sobremim">
 				<div class="text-card-modal">
 					<h2>Sobre mim</h2>
 				</div>
 			</div>
-			<div class="card-modal" onclick="AbrirContato()">
+			<div class="card-modal" onclick="DisplayPage(this)" data-menu-item="contato">
 				<div class="text-card-modal">
 					<h2>Contato</h2>
 				</div>
@@ -117,11 +117,26 @@
 		</div>
 
 		<div class="card-contain hide" id="portifolio">
-			<button class="btn-sem-estilo btn-voltar" onclick="VoltarPortifolio()">
+			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="portifolio">
 				<i class="fas fa-arrow-left"></i></button>
 			<p class="title">
 				Portifólio
 			</p>
+<div class="white-box" style="text-align:center;font-size:18px;">
+	<br>(Em construção)<br><br>
+	<iframe src="https://giphy.com/embed/3owyp2SViuDIGh8YoM" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+			<!-- <div class="white-box">
+				<h3 style="margin:10px;">Veiculando.com - Marketing Site</h3>
+				<div onclick="DisplayPage(this)" data-menu-item="case1" class="btn-quadrado">
+						<img class="img-quadrado" onclick="HidePage(this)" data-menu-item="portifolio" src="gfggiza.github.io\imgs\veiculando-home.png" alt="img veiculando home">
+				</div>
+			</div> -->
+		</div>
+
+		<!-- <div class="card-contain hide" id="case1">
+			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="case1">
+				<i class="fas fa-arrow-left"></i>
+			</button>
 			<div class="white-box">
 				<h3 style="margin:10px;">Veiculando.com - Marketing Site</h3>
 				<ul style="font-size:15px;margin:0px;">
@@ -132,20 +147,10 @@
 					style="overflow:auto;">
 				</object>
 			</div>
-			<!-- <div class="white-box">
-				<h3 style="margin:10px;">Veiculando.com - Aplicação</h3>
-				<ul style="font-size:15px;margin:0px;">
-					<li>Desenvolvimento do Front-End e UX da plataforma Veiculando.com</li>
-					<li>Desenvolvimento da linguagem estética do site, material gráfico e Responsividade.</li>
-				</ul>
-				<object type="text/html" data="https://app.veiculando.com/" width="100%" height="400px"
-					style="overflow:auto;">
-				</object>
-			</div> -->
-		</div>
+		</div> -->
 
 		<div class="card-contain hide" id="projetos">
-			<button class="btn-sem-estilo btn-voltar" onclick="VoltarProjetos()"><i
+			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="projetos"><i
 					class="fas fa-arrow-left"></i></button>
 			<p class="title">
 				Projetos
@@ -156,7 +161,7 @@
 		</div>
 
 		<div class="card-contain hide" id="sobremim">
-			<button class="btn-sem-estilo btn-voltar" onclick="VoltarSobremim()"><i
+			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="sobremim"><i
 					class="fas fa-arrow-left"></i></button>
 			<p class="title">
 				Sobre mim
@@ -166,6 +171,7 @@
 					<div class="img-div">
 						<img src="https://lh3.googleusercontent.com/G9CKVfkdXzY5weZWPwOUU5AELRjoPFd-AeKu_zusa4wNhTr5aOWRurieXMZBTTu42xs7qVMr9QiLg8zhMaYhE2d1i6GkUK5T2NsOVLIRxIdVDUpeyUrGGk11qQ0OOiUORZWdngRpYQ=w2400"
 							alt="minha foto" class="sobremim-img" style="max-width: 300px;">
+							<a target="_blank" href="gfggiza.github.io\imgs\Currículo-atualizado.pdf" class="btn-common">Currículo</a>
 					</div>
 					<div class="sobremim-text">
 						Olá, Meu nome é <b>Gisele Granato</b>. <br><br>
@@ -193,7 +199,7 @@
 
 
 		<div class="card-contain hide" id="contato">
-			<button class="btn-sem-estilo btn-voltar" onclick="VoltarContato()"><i
+			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="contato"><i
 					class="fas fa-arrow-left"></i></button>
 			<p class="title">
 				Contato
