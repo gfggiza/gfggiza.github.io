@@ -118,7 +118,7 @@ body {
 }
 .title {
     color: #9e1b44;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    /* -webkit-text-stroke: 2px rgb(255, 255, 255); */
     font-size: 70px; 
     font-weight: bold; 
     text-align: center;
