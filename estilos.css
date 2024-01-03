@@ -4,7 +4,6 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-
 .btn-fechar {
     cursor: pointer;
     float: right;
@@ -48,8 +47,6 @@ body {
     color: rgba(145, 202, 212, 0.82);
     background: #580620;
 }
-
-
 
 .canvas-style {
     background-color: #e8fafd;
@@ -95,6 +92,10 @@ body {
     overflow-x: hidden;
 }
 
+.parent-container {
+    background-color: white;
+    padding: 3vw;
+}
 
 .subir {
     position: absolute;
