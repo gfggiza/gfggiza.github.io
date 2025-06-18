@@ -26,8 +26,6 @@
     }
 }
 
-
-
 /* Skills */
 @keyframes blowUpContent {
     0% {
@@ -51,29 +49,27 @@
     }
 }
 
-
-
 @keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
 @-webkit-keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
 @-moz-keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
 @-o-keyframes load {
     from {
-        width: 0%
+        width: 0%;
     }
 }
 
@@ -87,18 +83,31 @@
     color: #FFF;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
 }
 
 .bar::before {
     content: attr(data-skill);
     background-color: #f8c6d6;
     display: inline-block;
-    padding: 5px 0 5px 10px;
+    padding: 0 10px;
+    /* Adjusted padding */
+    height: 100%;
+    /* Make it fill the height */
+    line-height: inherit;
+    /* Ensure text is vertically centered */
     border-radius: inherit;
     animation: load 2s 0s;
     -webkit-animation: load 2s 0s;
     -moz-animation: load 2s 0s;
     -o-animation: load 2s 0s;
+    width: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
 }
 
 .bar.front::before {
@@ -108,31 +117,39 @@
 .bar.back::before {
     background-color: #e27c9d;
 }
+
+/* Skill Levels */
 .bar.tiny::before {
-    width: calc(10% - 10px);
+    width: calc(10% - 0px);
+    /* Adjusted calculation */
 }
+
 .bar.learning::before {
-    width: calc(20% - 10px);
+    width: calc(20% - 0px);
+    /* Adjusted calculation */
 }
 
 .bar.basic::before {
-    width: calc(40% - 10px);
+    width: calc(40% - 0px);
+    /* Adjusted calculation */
 }
 
 .bar.medium::before {
-    width: calc(50% - 10px);
+    width: calc(50% - 0px);
+    /* Adjusted calculation */
 }
 
 .bar.intermediate::before {
-    width: calc(60% - 10px);
+    width: calc(60% - 0px);
+    /* Adjusted calculation */
 }
 
 .bar.advanced::before {
-    width: calc(80% - 10px);
+    width: calc(80% - 0px);
+    /* Adjusted calculation */
 }
 
 .bar.expert::before {
-    width: calc(90% - 10px);
+    width: calc(90% - 0px);
+    /* Adjusted calculation */
 }
-
-/* Skills */
