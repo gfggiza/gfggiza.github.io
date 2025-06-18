@@ -95,6 +95,10 @@ body {
     padding: 3vw;
 }
 
+.card-contain p {
+    text-align: center;
+}
+
 .subir {
     position: absolute;
 }
