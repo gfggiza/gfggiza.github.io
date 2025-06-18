@@ -23,6 +23,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
 	<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-a11y="true"></script>
+	<script src="https://kit.fontawesome.com/661e69264d.js" crossorigin="anonymous"></script>
 	<!-- importados -->
 
 	<!-- js -->
@@ -74,96 +75,77 @@
 
 </head>
 
-<body onload="init();" style="background-color:#e8fafd;margin:0px;">
+<body onload="init();" style="background-color:#e8fafd;margin:0px; height: 100vh;">
 
 	<div class="modal-style hide" id="modal">
-		<button onclick="FecharModal()" class="btn-fechar btn-sem-estilo">&times;</button>
+		<button onclick="FecharModal()" class="btn-close btn-sem-estilo">&times;</button>
 
 		<div class="card-contain" id="menu">
-			<!-- <div class="card-modal" onclick="DisplayPage(this)" data-menu-item="portifolio">
+			<div class="card-modal" onclick="DisplayPage(this)" data-menu-item="aboutme">
 				<div class="text-card-modal">
-					<h2>Portifólio</h2>
-				</div>
-			</div> -->
-			<!-- <div class="card-modal" onclick="DisplayPage(this)" data-menu-item="projetos">
-				<div class="text-card-modal">
-					<h2>Infográficos</h2>
-				</div>
-			</div> -->
-			<div class="card-modal" onclick="DisplayPage(this)" data-menu-item="sobremim">
-				<div class="text-card-modal">
-					<h2>Sobre mim</h2>
+					<i class="fa-solid fa-address-card app-icon"></i>
+					<h2>About me</h2>
 				</div>
 			</div>
-			<div class="card-modal" onclick="DisplayPage(this)" data-menu-item="contato">
+			<div class="card-modal" onclick="DisplayPage(this)" data-menu-item="contact">
 				<div class="text-card-modal">
-					<h2>Contato</h2>
+					<i class="fa-solid fa-address-book app-icon"></i>
+					<h2>Contact</h2>
+				</div>
+			</div>
+			<div class="card-modal" onclick="GoTo(this)" data-href="https://github.com/gfggiza">
+				<div class="text-card-modal">
+					<i class="fa-solid fa-arrow-up-right-from-square app-icon"></i>
+					<h2>GitHub</h2>
 				</div>
 			</div>
 		</div>
 
-		<div class="card-contain hide" id="portifolio">
-			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="portifolio">
-				<i class="fas fa-arrow-left"></i></button>
-			<p class="title">
-				 Portifólio 
-			</p>
-			<div class="white-box" style="text-align:center;font-size:18px;">
-				<br>(Em construção)<br><br>
-				<iframe src="https://giphy.com/embed/3owyp2SViuDIGh8YoM" width="480" height="480" frameBorder="0"
-					class="giphy-embed" allowFullScreen></iframe></div>
-		</div>
-
-
-		<div class="card-contain hide" id="projetos">
-			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="projetos"><i
-					class="fas fa-arrow-left"></i></button>
-			<p class="title">
-					Infográficos
-			</p>
+		<div class="card-contain hide" id="aboutme">
 			<div class="white-box">
-
-			</div>
-		</div>
-
-		<div class="card-contain hide" id="sobremim">
-			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="sobremim"><i
-					class="fas fa-arrow-left"></i></button>
-					<p class="title">
-						Sobre mim
-				</p>
-			<div class="white-box">
-				<div class="sobremim-style">
+				<button class="btn-sem-estilo btn-back" onclick="HidePage(this)" data-menu-item="aboutme"><i
+						class="fas fa-arrow-left"></i></button>
+				<div class="aboutme-style">
 					<div class="img-div">
-						<img src="https://lh3.googleusercontent.com/G9CKVfkdXzY5weZWPwOUU5AELRjoPFd-AeKu_zusa4wNhTr5aOWRurieXMZBTTu42xs7qVMr9QiLg8zhMaYhE2d1i6GkUK5T2NsOVLIRxIdVDUpeyUrGGk11qQ0OOiUORZWdngRpYQ=w2400"
-							alt="minha foto" class="sobremim-img" style="max-width: 300px;">
-						<a target="_blank" href="https://github.com/gfggiza/gfggiza.github.io/blob/master/imgs/Currículo-atualizado.pdf"
-							class="btn-common">Currículo</a>
+						<img src="assets/images/profile_image.jpeg" alt="my photo" class="aboutme-img"
+							style="max-width: 200px;">
+						<a target="_blank"
+							href="https://github.com/gfggiza/gfggiza.github.io/blob/master/assets/Currículo-atualizado.pdf"
+							class="btn-common">Curriculum</a>
 					</div>
-					<div class="sobremim-text">
-						<p style="font-size:25px"><span style="color:#9e1b44;">Olá,</span> Meu nome é <b>Gisele Granato</b>.</p>
+					<div class="aboutme-text">
+						<p style="font-size:25px"><span style="color:#9e1b44;">Hi,</span> My name is <b>Gisele
+								Granato</b>.</p>
 						<p style="font-size: 18px;">
-							Trabalho com desenvolvimento Web desde
-							2018. Sou autodidata e multidisciplinar.
-							Além da programação crio material gráfico,
-							icones e animações para sites.
+							I work with technologies such as Flutter, Dart, and SCSS, focusing on user experience and
+							delivering
+							intuitive and responsive interfaces.
 							<br><br>
+							With a degree in Architecture and a specialization in Graphic Design,
+							I bring a visual and functional perspective to web development.
+							<br><br>
+							I'm driven by creating solutions that combine aesthetics and efficiency,
+							with experience in graphic design and frontend development for B2B and social impact
+							projects.
 							Possuo vivência com projeto de startup e
 							experiência com trabalho remoto.
 						</p>
 					</div>
 
-					<div class="sobremim-skills">
-						<div class="subtitle">Habilidades</div>
-						<div class="bar front expert" data-skill="Pacote Adobe"></div>
-						<div class="bar front advanced" data-skill="HTML5"></div>
+					<div class="aboutme-skills">
+						<div class="subtitle">Skills</div>
+						<div class="bar front advanced" data-skill="Flutter"></div>
+						<div class="bar front advanced" data-skill="Angular 14+"></div>
+						<div class="bar front advanced" data-skill="Typescript"></div>
+						<div class="bar front expert" data-skill="HTML5"></div>
 						<div class="bar front advanced" data-skill="CSS3"></div>
-						<div class="bar back intermediate" data-skill="Angular 2+"></div>
-						<div class="bar back intermediate" data-skill="Javascript"></div>
-						<div class="bar back medium" data-skill="Git"></div>
-						<div class="bar back basic" data-skill="Rest APIs"></div>
-						<div class="bar learning" data-skill="Google Analitics"></div>
-						<div class="bar learning" data-skill="React"></div>
+						<div class="bar back advanced" data-skill="Javascript"></div>
+						<div class="bar back advanced" data-skill="Rest APIs"></div>
+						<div class="bar back advanced" data-skill="Git"></div>
+						<div class="bar advanced" data-skill="Analitics/Firebase"></div>
+						<div class="bar basic" data-skill="React Native"></div>
+						<div class="bar basic" data-skill="Kotlin"></div>
+						<div class="bar learning" data-skill="Switft"></div>
 					</div>
 				</div>
 
@@ -171,14 +153,13 @@
 			</div>
 		</div>
 
-
-		<div class="card-contain hide" id="contato">
-			<button class="btn-sem-estilo btn-voltar" onclick="HidePage(this)" data-menu-item="contato"><i
-					class="fas fa-arrow-left"></i></button>
-			<p class="title">
-				Contato
-			</p>
+		<div class="card-contain hide" id="contact">
 			<div class="white-box">
+				<button class="btn-sem-estilo btn-back" onclick="HidePage(this)" data-menu-item="contact"><i
+						class="fas fa-arrow-left"></i></button>
+				<p class="title">
+					Contact
+				</p>
 				<div class="card-contain">
 					<p>
 						<i class="far fa-envelope" style="margin-right:15px;"></i>E-mail: gfggiza2@gmail.com
@@ -187,7 +168,7 @@
 						<i class="fas fa-phone" style="margin-right:15px;"></i> Cel. (+351)92029-5632 <br>
 					</p>
 					<p>
-						<i class="fas fa-city" style="margin-right:15px;"></i> Lisboa
+						<i class="fas fa-city" style="margin-right:15px;"></i> Lisbon
 					</p>
 					<!-- <h3>Redes Sociais</h3>
 					<a href="https://www.linkedin.com/in/giselegranato/"><i class="fab fa-linkedin"

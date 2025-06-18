@@ -11,15 +11,20 @@ function DisplayPage(el) {
     document.getElementById(el.dataset.menuItem).classList.remove('hide');
 }
 
+function GoTo(el) {
+    const href = el.getAttribute('data-href');
+    window.open(href, '_blank');
+}
+
 function HidePage(el) {
     DisplayMenu();
     document.getElementById(el.dataset.menuItem).classList.add('hide');
 }
 
-function AbrirModal(){
+function AbrirModal() {
     document.getElementById("modal").classList.remove('hide');
 }
 
-function FecharModal(){
+function FecharModal() {
     document.getElementById("modal").classList.add('hide');
 }
