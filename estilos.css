@@ -95,10 +95,6 @@ body {
     padding: 3vw;
 }
 
-.card-contain p {
-    text-align: center;
-}
-
 .subir {
     position: absolute;
 }
@@ -116,6 +112,22 @@ body {
     border-radius: 20px;
     z-index: 155;
     height: fit-content;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .card-contain {
+            p {
+                button {
+                    background-color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
 }
 
 .text-card-modal {
